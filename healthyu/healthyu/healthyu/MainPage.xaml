@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="healthyu.MainPage"
+             Title="Home"
+             NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+        <Grid>
+            <StackLayout BackgroundColor="#cce9e7">
+                <StackLayout>
+                    <Image HorizontalOptions="Center" VerticalOptions="Center" Source="logo.jpg" WidthRequest="420"/>
+                    <Image HorizontalOptions="Center" VerticalOptions="Center" Source="main.jpg" WidthRequest="420"/>
+                </StackLayout>
+                <Label Text="Welcome to HealthyU!" FontSize="24" FontAttributes="Bold" HorizontalTextAlignment="Center" Padding="18"/>
+                <Label Text="If you are looking to get back up after being idle for a while, then you came to the right place!" FontSize="18" HorizontalTextAlignment="Center" Padding="8"/>
+                <Label Text="From daily stretches to watching out for your mental health, we got the stuff you need to get working again. Select an option below to get started!" FontSize="18" HorizontalTextAlignment="Center" Padding="8"/>
+                <Label/>
+                <Button x:Name="DailyStretch" Text="Daily Stretch" HorizontalOptions="Center" WidthRequest="150" BackgroundColor="#f89c2b" Clicked="DailyStretch_Clicked" />
+
+                <Button x:Name="HealthyDiet" Text="A Healthy Diet" HorizontalOptions="Center" WidthRequest="150" BackgroundColor="#f89c2b" Clicked="HealthyDiet_Clicked" />
+
+                <Button x:Name="PeaceMind" Text="Peace of Mind" HorizontalOptions="Center" WidthRequest="150" BackgroundColor="#f89c2b" Clicked="PeaceMind_Clicked" />
+
+                <Button x:Name="PrimaryCare" Text="Primary Care" HorizontalOptions="Center" WidthRequest="150" BackgroundColor="#f89c2b" Clicked="PrimaryCare_Clicked" />
+
+                <Button x:Name="BuildU" Text="Build for U" HorizontalOptions="Center" WidthRequest="150" BackgroundColor="#f89c2b" Clicked="BuildU_Clicked" />
+
+                <Button x:Name="BMICalculator" Text="BMI Calculator" HorizontalOptions="Center" WidthRequest="150" BackgroundColor="#f89c2b" Clicked="BMICalculator_Clicked" />
+
+                <StackLayout>
+                    <Label/>
+                    <Label/>
+                    <Button x:Name="AboutUs" Text="About Us" HorizontalOptions="Center" WidthRequest="120" BackgroundColor="#cdcb8d" Clicked="AboutUs_Clicked" />
+                    <Label/>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+
+</ContentPage>

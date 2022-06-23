@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:healthyu"
+             x:Class="healthyu.flyout">
+    <FlyoutItem Title="Home" Icon="ic_home.png">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Daily Stretch" Icon="ic_daily.png">
+        <ShellContent ContentTemplate="{DataTemplate local:DailyStretch}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="A Healty Diet" Icon="ic_diet.png">
+        <ShellContent ContentTemplate="{DataTemplate local:HealthyDiet}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Peace of Mind" Icon="ic_peace.png">
+        <ShellContent ContentTemplate="{DataTemplate local:PeaceMind}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Primary Care" Icon="ic_care.png">
+        <ShellContent ContentTemplate="{DataTemplate local:PrimaryCare}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Build for You" Icon="ic_build.png">
+        <ShellContent ContentTemplate="{DataTemplate local:BuildU}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="BMI Calculator" Icon="ic_bmi.png">
+        <ShellContent ContentTemplate="{DataTemplate local:BMICalculator}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="About Us" Icon="ic_about.png">
+        <ShellContent ContentTemplate="{DataTemplate local:About}"/>
+    </FlyoutItem>
+
+</Shell>

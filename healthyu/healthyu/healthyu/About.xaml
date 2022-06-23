@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="healthyu.About"
+             Title="About Us"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        
+        <StackLayout>
+            <StackLayout>
+                <Label Text="About Us" FontSize="24" FontAttributes="Bold" HorizontalTextAlignment="Center" Padding="12"/>
+            </StackLayout>
+            <Label Text="The creators of HealthyU, Renato Galias, Aleeza Ulang and Aldrin Wang, aims to reach students who have been affected by the effects brought upon by the coronavirus pandemic in 2020. We believe that being idle for long enough is bad for the health of an individual, especially students who have been sitting in front of their screens for hours trying to attend their online classes." FontSize="18" Margin="15, 5, 5, 5" Padding="18"/>
+            <Button x:Name="Back" Text="Back" HorizontalOptions="Center" TextColor="White" BackgroundColor="#ff6969" Clicked="Back_Clicked" />
+            <Label/>
+        </StackLayout> <!--images from istock-->
+    </ContentPage.Content>
+</ContentPage>
+    
+   
+    

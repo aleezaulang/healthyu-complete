@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="healthyu.DSExerciseOne"
+             Title="Easy Stretches">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#fef9f5">
+                <StackLayout>
+                    <Label Text="Easy Stretches" FontSize="24" FontAttributes="Bold" HorizontalTextAlignment="Center" Padding="12"/>
+                    <!--https://www.verywellfit.com/relaxing-total-body-stretches-1231150-->
+                    <Label Text="From verywellfit, we have chosen this set of exercise for beginners. Whether you have never exercised before or have been maintaining minimal activity, these stretches are perfect for you to try." FontSize="18" HorizontalTextAlignment="Center" Padding="20"/>
+                </StackLayout>
+                
+                <StackLayout>
+                    <Label Text="Quad Stretch" FontSize="16" FontAttributes="Bold" TextColor="Blue" HorizontalTextAlignment="Center" Padding="5"/>
+                    <Image HorizontalOptions="Center" VerticalOptions="Center" Source="exrseven.png" WidthRequest="420"/>
+                    <Label Text="1. Stand and hold onto a wall or the back of a chair for balance if needed." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label Text="2. Grab the top of the left foot and bend your knee, bringing the foot towards the glutes, knee pointing straight at the floor. You should feel a stretch down the front of your leg." FontSize="16"  Margin="15, 5, 5, 5"  />
+                    <Label Text="3. Squeeze your hips forward for a deeper stretch." FontSize="16"  Margin="15, 5, 5, 5"  />
+                    <Label Text="4. Hold for 15 to 30 seconds and switch sides, repeating one to three times per leg.." FontSize="16"  Margin="15, 5, 5, 5"/>
+                    <Label/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label Text="Standing Hamstring Stretch" FontSize="16" FontAttributes="Bold" TextColor="Blue" HorizontalTextAlignment="Center" Padding="5"/>
+                    <Image HorizontalOptions="Center" VerticalOptions="Center" Source="exrfive.png" WidthRequest="420"/>
+                    <Label Text="1. Take your left foot forward and tip from the hips, keeping the back flat." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label Text="2. Lower down until you feel a stretch in the back of the leg." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label Text="3. Rest the hands on the upper thighs to give your back some support. " FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label Text="4. Hold for 15 to 30 seconds and switch sides, repeating one to three times." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label Text="Chest and Shoulder Stretch" FontSize="16" FontAttributes="Bold" TextColor="Blue" HorizontalTextAlignment="Center" Padding="5"/>
+                    <Image HorizontalOptions="Center" VerticalOptions="Center" Source="exrthree.png" WidthRequest="420"/>
+                    <Label Text="1. Sit or stand and clasp your hands together behind your back, arms straight." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label Text="2. Lift your hands towards the ceiling, going only as high as is comfortable. You should feel a stretch in your shoulders and chest." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label Text="3. Hold for 15 to 30 seconds, repeating one to three times." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label Text="Upper Back Stretch" FontSize="16" FontAttributes="Bold" TextColor="Blue" HorizontalTextAlignment="Center" Padding="5"/>
+                    <Image HorizontalOptions="Center" VerticalOptions="Center" Source="exrone.png" WidthRequest="420"/>
+                    <Label Text="1. Clasp your hands together in front of you and round your back, pressing your arms away from your body to feel a stretch in your upper back." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label Text="2. Contract the abs to get the most out of this stretch." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label Text="3. Hold for 15 to 30 seconds, repeating one to three times." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label Text="Biceps Stretch" FontSize="16" FontAttributes="Bold" TextColor="Blue" HorizontalTextAlignment="Center" Padding="5"/>
+                    <Image HorizontalOptions="Center" VerticalOptions="Center" Source="exrsix.png" WidthRequest="420"/>
+                    <Label Text="1. Take your arms out to the sides, slightly behind you, with your thumbs up, like a hitchhiker." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label Text="2. Rotate your thumbs down and back until they are pointing to the back wall to stretch the biceps." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label Text="3. Hold for 15 to 30 seconds, repeating one to three times." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label Text="Shoulder Stretch" FontSize="16" FontAttributes="Bold" TextColor="Blue" HorizontalTextAlignment="Center" Padding="5"/>
+                    <Image HorizontalOptions="Center" VerticalOptions="Center" Source="exrtwo.png" WidthRequest="420"/>
+                    <Label Text="1. Take your right arm straight across your chest and curl the left hand around your elbow, gently pulling on the right arm to deepen the stretch in the shoulders." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label Text="2. Try dropping the shoulder down if you're not feeling a stretch." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label Text="3. Hold for 15 to 30 seconds and switch sides, repeating one to three times on each side." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label Text="Seated Side Stretch" FontSize="16" FontAttributes="Bold" TextColor="Blue" HorizontalTextAlignment="Center" Padding="5"/>
+                    <Image HorizontalOptions="Center" VerticalOptions="Center" Source="exereight.png" WidthRequest="420"/>
+                    <Label Text="1. Sitting or standing, clasp your hands straight up overhead, palms facing the ceiling." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label Text="2. Stretch up and then over to the right, feeling a stretch down your left side." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label Text="3. Hold for 15 to 30 seconds and switch sides, repeating one to three times." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label Text="Triceps Stretch" FontSize="16" FontAttributes="Bold" TextColor="Blue" HorizontalTextAlignment="Center" Padding="5"/>
+                    <Image HorizontalOptions="Center" VerticalOptions="Center" Source="exrfour.png" WidthRequest="420"/>
+                    <Label Text="1. Bend your right elbow behind your head and use the right hand to gently pull the left elbow in further until you feel a stretch in your triceps." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label Text="2. Hold for 15 to 30 seconds and switch sides, repeating one to three times." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

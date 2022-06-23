@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="healthyu.BuildU"
+             Title="Build for You"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#f7faff">
+                <Image HorizontalOptions="Center" 
+                       Source="buildu.png" 
+                       WidthRequest="150"
+                       Margin="0,20,0,0"/>
+                <Frame Margin="10,10,10,0"
+                   CornerRadius="30"
+                   BackgroundColor="White"
+                   HeightRequest="80">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="80"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="btn_chest_Tapped"/>
+                        </Grid.GestureRecognizers>
+                        <Image Source="build_chest.png"
+                           HorizontalOptions="Start"/>
+                        <Label Grid.Column="1"
+                           FontSize="Large"
+                           TextColor="Gray"
+                           Text="Chest"
+                           Margin="20,0,0,0"
+                           VerticalOptions="Center"
+                           HorizontalOptions="StartAndExpand"/>
+                    </Grid>
+                </Frame>
+
+                <Frame Margin="10,10,10,0"
+                   CornerRadius="30"
+                   BackgroundColor="White"
+                   HeightRequest="80">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="80"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="btn_biceps_Tapped"/>
+                        </Grid.GestureRecognizers>
+                        <Image Source="build_biceps.png"
+                           HorizontalOptions="Start"/>
+                        <Label Grid.Column="1"
+                           FontSize="Large"
+                           TextColor="Gray"
+                           Text="Biceps"
+                           Margin="20,0,0,0"
+                           VerticalOptions="Center"
+                           HorizontalOptions="StartAndExpand"/>
+                    </Grid>
+                </Frame>
+
+                <Frame Margin="10,10,10,0"
+                   CornerRadius="30"
+                   BackgroundColor="White"
+                   HeightRequest="80">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="80"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="btn_abs_Tapped"/>
+                        </Grid.GestureRecognizers>
+                        <Image Source="build_abs.png"
+                           HorizontalOptions="Start"/>
+                        <Label Grid.Column="1"
+                           FontSize="Large"
+                           TextColor="Gray"
+                           Text="Abs"
+                           Margin="20,0,0,0"
+                           VerticalOptions="Center"
+                           HorizontalOptions="StartAndExpand"/>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

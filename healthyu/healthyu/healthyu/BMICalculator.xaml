@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="healthyu.BMICalculator"
+             Title="BMI Calculator"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#efb15e">
+            <Image HorizontalOptions="Center" Source="bmicalc.jpg" WidthRequest="130"/>
+            <Frame CornerRadius="20"
+                   Padding="10,10,10,10"
+                   Margin="5,10,5,10"
+                   BackgroundColor="White"
+                   VerticalOptions="Center">
+                <StackLayout>
+                    <Label Text="BMI"
+                           HorizontalTextAlignment="Center"
+                           FontSize="32"
+                           TextColor="Gray"
+                           Margin="0,20,0,0"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Image  Grid.ColumnSpan="3"
+                                Source="bmi_bar.png"/>
+                        <Image Grid.Column = "1"
+                               Source="bmi_line.png"
+                               HeightRequest="50"
+                               x:Name="line"
+                               IsVisible="true"/>
+                    </Grid>
+                    <Label x:Name="bmiResult"
+                           Text=""
+                           HorizontalOptions="Center"
+                           FontSize="40"
+                           TextColor="Gray"
+                           IsVisible="false"
+                           FontAttributes="Bold"/>
+                    <Label x:Name="bmiResulttxt"
+                           Text=""
+                           HorizontalOptions="Center"
+                           FontSize="40"
+                           TextColor="Gray"
+                           IsVisible="false"
+                           FontAttributes="Bold"/>
+
+                    <Label x:Name="lblerror"
+                           TextColor="Red"
+                           Text="Invalid Entry"
+                           IsVisible="false"
+                           HorizontalOptions="Center"/>
+
+                    <StackLayout>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="5"/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="5"/>
+                                <ColumnDefinition Width="35"/>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="30"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Label Text="Height"
+                                   FontSize="Small"
+                                   HorizontalOptions="Center"
+                                   Grid.Row="0"
+                                   Grid.ColumnSpan="4"/>
+                            <Label Text="Weight"
+                                   FontSize="Small"
+                                   HorizontalOptions="Center"
+                                   Grid.Row="0"
+                                   Grid.Column="5"/>
+                            <StackLayout Grid.Row="1" 
+                                         Grid.ColumnSpan="4"
+                                         x:Name="heightcmView"
+                                         IsVisible="true">
+                                <Entry x:Name="heightcm"
+                                       HorizontalTextAlignment="Center"/>
+                            </StackLayout>
+                            <StackLayout Grid.Row="1"
+                                         Grid.Column="0"
+                                         x:Name="heightftEntryView"
+                                         IsVisible="False">
+                                <Entry x:Name="heightft"
+                                       HorizontalTextAlignment="Center"/>
+                            </StackLayout>
+                            <StackLayout Grid.Row="1"
+                                         Grid.Column="1"
+                                         x:Name="heightftLabelView"
+                                         IsVisible="False">
+                                <Label Text="'"
+                                       FontAttributes="Bold"
+                                       FontSize="Large"/>
+
+                            </StackLayout>
+                            <StackLayout Grid.Row="1"
+                                         Grid.Column="2"
+                                         x:Name="heightinEntryView"
+                                         IsVisible="False">
+                                <Entry x:Name="heightin"
+                                       HorizontalTextAlignment="Center"/>
+
+
+                            </StackLayout>
+                            <StackLayout Grid.Row="1"
+                                         Grid.Column="3"
+                                         x:Name="heightinLabelView"
+                                         IsVisible="False">
+                                <Label Text='"'
+                                       FontAttributes="Bold"
+                                       FontSize="Large"/>
+
+                            </StackLayout>
+                            <StackLayout Grid.Row="1" 
+                                         Grid.Column="4">
+                                <Picker x:Name="heightUnit"
+                                        Title="Select Unit of Measurement"
+                                        HorizontalOptions="Center"
+                                        SelectedIndexChanged="heightUnit_SelectedIndexChanged">
+                                    <Picker.Items>
+                                        <x:String>cm</x:String>
+                                        <x:String>ft</x:String>
+                                    </Picker.Items>
+                                    <Picker.SelectedIndex>0</Picker.SelectedIndex>
+                                </Picker>
+                            </StackLayout>
+                            <StackLayout Grid.Row="1" 
+                                         Grid.Column="5">
+                                <Entry x:Name="weight"
+                                       HorizontalTextAlignment="Center"/>
+                            </StackLayout>
+                            <StackLayout Grid.Row="1" 
+                                         Grid.Column="6">
+                                <Picker x:Name="weightUnit"
+                                        Title="Select Unit of Measurement"
+                                        HorizontalOptions="FillAndExpand">
+                                    <Picker.Items>
+                                        <x:String>kg</x:String>
+                                        <x:String>lb</x:String>
+                                    </Picker.Items>
+                                    <Picker.SelectedIndex>0</Picker.SelectedIndex>
+                                </Picker>
+                            </StackLayout>
+                        </Grid>
+                        <Button x:Name="bmi_calculate_btn"
+                                Clicked="bmi_calculate_btn_Clicked"
+                                Text="Calculate"
+                                Margin="80,30,80,10"
+                                CornerRadius="50"
+                                TextColor="White"
+                                BackgroundColor="Green"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

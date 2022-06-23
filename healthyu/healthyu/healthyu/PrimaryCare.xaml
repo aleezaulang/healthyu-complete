@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="healthyu.PrimaryCare"
+             Title="Primary Care"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <StackLayout BackgroundColor="#ffffff">
+                    <StackLayout>
+                        <Image HorizontalOptions="Center" VerticalOptions="Center" Source="peaceofmind.jpg" WidthRequest="420"/>
+                    </StackLayout>
+                    <Button x:Name="Back" Text="Back" HorizontalOptions="Center" TextColor="White" BackgroundColor="#ff6969" Clicked="Back_Clicked" />
+                    <Label/>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>

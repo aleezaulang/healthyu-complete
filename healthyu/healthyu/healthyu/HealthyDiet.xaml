@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="healthyu.HealthyDiet"
+             Title="A Healthy Diet"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <StackLayout BackgroundColor="#edd500">
+                <StackLayout>
+                    <Image HorizontalOptions="Center" VerticalOptions="Center" Source="calorie.jpg" WidthRequest="420"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="A Healthy Diet" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="32" TextColor="Black" Padding="18"/>
+                    <Label Text="When it comes to health, it's also important to keep in mind the amount of food we are eating. This calorie calculator estimates your daily calories requirements in order to maintain, lose or gain weigh based on your BMR (weight, height, age and gender) and physical exercise level." FontSize="18" HorizontalTextAlignment="Center" Padding="8"/>
+                </StackLayout>
+                <Frame Margin="10, 10, 10, 10" CornerRadius="10">
+                    <Picker Title="Gender" x:Name="MainPicker">
+                        <Picker.Items>
+                            <x:String>Male</x:String>
+                            <x:String>Female</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </Frame>
+
+                <Frame Margin="10, 10, 10, 10" CornerRadius="10">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Weight in kg:" VerticalOptions="Center" />
+                        <Entry x:Name="weightkg" HorizontalOptions="FillAndExpand" />
+                    </StackLayout>
+                </Frame>
+
+                <Frame Margin="10, 10, 10, 10" CornerRadius="10">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Height in cm:" VerticalOptions="Center" />
+                        <Entry x:Name="heightcm" HorizontalOptions="FillAndExpand" />
+                    </StackLayout>
+                </Frame>
+
+                <Frame Margin="10, 10, 10, 10" CornerRadius="10">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Age:" VerticalOptions="Center" />
+                        <Entry x:Name="ageper" HorizontalOptions="FillAndExpand" />
+                    </StackLayout>
+                </Frame>
+
+                <Frame Margin="10, 10, 10, 10" CornerRadius="10">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="How much exercise do you do in a week?" VerticalOptions="Center" />
+                        <Entry x:Name="exerone" HorizontalOptions="FillAndExpand" />
+                    </StackLayout>
+                </Frame>
+
+                <Button x:Name="CalcCal" Text="Calculate Calories" HorizontalOptions="Center" TextColor="White" BackgroundColor="#003cff" Clicked="CalcCal_Clicked" />
+                <Label/>
+                <Label Text="Result:" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="24" TextColor="Black" />
+                <Frame Margin="10, 10, 10, 10" CornerRadius="10">
+                    <Label x:Name="Result" FontSize="18" FontAttributes="Bold" TextColor="DodgerBlue" HorizontalTextAlignment="Center" />
+                </Frame>
+                <Label/>
+                
+                <Button x:Name="Back" Text="Back" HorizontalOptions="Center" TextColor="White" BackgroundColor="#ff6969" Clicked="Back_Clicked" />
+                <Label/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

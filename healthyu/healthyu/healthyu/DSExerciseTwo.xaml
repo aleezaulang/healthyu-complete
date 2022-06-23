@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="healthyu.DSExerciseTwo"
+             Title="Lazy Morning Stretches">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#fef9f5">
+                <StackLayout>
+                    <Label Text="Lazy Morning Stretches" FontSize="24" FontAttributes="Bold" HorizontalTextAlignment="Center" Padding="12"/>
+
+                    <Label Text="These stretches from bupa are perfect for those who want to stay on their bed or by the side of their bed. If you can't leave your bed for your own reasons but want to do some active stretches, try these following exercises!" FontSize="18" HorizontalTextAlignment="Center" Padding="20"/>
+                </StackLayout>
+                
+                <StackLayout>
+                    <Image HorizontalOptions="Center" VerticalOptions="Center" Source="calf.JPG" WidthRequest="420"/>
+                    <Label Text="Placing your hands on a wall for support, step back on one leg and gently push your heel towards the ground, feeling a nice stretch along the back of your calf. Hold for 10-15 seconds and repeat on your opposite leg." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Image HorizontalOptions="Center" VerticalOptions="Center" Source="cobra.JPG" WidthRequest="420"/>
+                    <Label Text="Lie on your stomach and place your hands flat beneath your shoulders. Tuck your elbows in by your sides and gently raise your head and chest, keeping your hips and groin on the bed. If it feels comfortable, you can go a little deeper by lifting your tummy off the bed too. Remember to relax your neck and shoulders. Hold the stretch for 15-20 seconds and when you're ready, gently lower back down." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Image HorizontalOptions="Center" VerticalOptions="Center" Source="hamstring.JPG" WidthRequest="420"/>
+                    <Label Text="Stand upright and gently bend one knee as if you're going into a sitting position. Place the opposite leg outright, pointing your toes towards the ceiling. Bend forward from your hips to feel a nice stretch along the back of your outstretched leg. Hold for 10-15 seconds and then repeat with your other leg." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Image HorizontalOptions="Center" VerticalOptions="Center" Source="knees.JPG" WidthRequest="420"/>
+                    <Label Text="Lying flat on your back, bring one knee to your chest and hold it in position with your arms or hands. You should feel a nice stretch in your lower back. If it feels comfortable, you can also do this stretch by bending both knees at the same time." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Image HorizontalOptions="Center" VerticalOptions="Center" Source="neck.JPG" WidthRequest="420"/>
+                    <Label Text="Relax your shoulders and gently move your left ear towards your left shoulder, using your left arm to help. Only stretch as far as feels comfortable. Hold for 15-20 seconds and slowly repeat on the other side." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Image HorizontalOptions="Center" VerticalOptions="Center" Source="quad.JPG" WidthRequest="420"/>
+                    <Label Text="Stand up straight and hold onto the wall or a chair if you need to. Keep your feet hip-width apart. Reach back and grab your left foot with your left hand. Keep your thighs lined up next to each other and your left leg in line with your hip. Feel the stretch in your left thigh and hips. Repeat with your right leg." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Image HorizontalOptions="Center" VerticalOptions="Center" Source="shoulder.JPG" WidthRequest="420"/>
+                    <Label Text="Relaxing your shoulder blades back and down, reach one arm across your body and gently use your other arm to deepen the stretch. Hold for 15-20 seconds and repeat on the other side." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Image HorizontalOptions="Center" VerticalOptions="Center" Source="side.JPG" WidthRequest="420"/>
+                    <Label Text="Stand with your feet hip-width apart and clasp your hands above your head. Gently lean your body to one side, feeling a deep stretch along the side of your body. Hold for 10-15 seconds and repeat on the other side." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Image HorizontalOptions="Center" VerticalOptions="Center" Source="spinal.JPG" WidthRequest="420"/>
+                    <Label Text="Lying on your back, raise one of your knees, and gently roll it over to the opposite side. Make sure both of your shoulders stay in contact with the bed at all times. If it feels comfortable, stretch one arm out to the side, keeping it in line with your shoulders, and slowly turn your head to face your outstretched arm. You should feel the stretch on the sides of your upper body and your lower back. Breathe deeply and repeat on the opposite side." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Image HorizontalOptions="Center" VerticalOptions="Center" Source="upperb.JPG" WidthRequest="420"/>
+                    <Label Text="Sit on the edge of your bed, with your feet flat on the floor. Interlock your fingers and reach forward, bending from your middle back. Stretch with your hands forward at shoulder level. You should feel the stretch between your shoulder blades." FontSize="16"  Margin="15, 5, 5, 5" />
+                    <Label/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
